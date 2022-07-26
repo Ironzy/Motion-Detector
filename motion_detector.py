@@ -95,7 +95,7 @@ while True:
 	# show the frame and record if the user presses a key
 	cv2.imshow("Security Feed", frame)
 
-
+	# capture frame of detected object
 	if text == 'Occupied':
 		cv2.imwrite('img'+str(datetime.datetime.now().strftime("%A %d %B %Y %I:%M:%S%p"))+'.jpg', frame)
 	
